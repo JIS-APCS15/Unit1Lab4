@@ -54,6 +54,7 @@ public class Canvas
          * @param height  the desired height for the canvas
          * @param bgClour  the desired background colour of the canvas
          */
+
         private Canvas(String title, int width, int height, Color bgColour)
         {
             frame = new JFrame();
@@ -212,10 +213,10 @@ public class Canvas
             private Shape shape;
             private String colorString;
 
-            public ShapeDescription(Shape shape, String col)
+            public ShapeDescription(Shape shape, String color)
             {
                 this.shape = shape;
-                colorString = col;
+                colorString = color;
             }
 
             public void draw(Graphics2D graphic)
